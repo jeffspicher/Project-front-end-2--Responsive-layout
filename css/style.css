@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1400px;                  /* */
+    justify-content: center;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    background-color: #F9F9F9;
+}
+    /* list and hyperlink */
+a{
+    text-decoration:none;
+    color:black;
+    font-weight: 500;
+    }
+    
+    li{
+    list-style:none;
+    }   
+
+
+/* h section */ 
+h1{
+font-family: 'Nova Mono', monospace;
+font-weight:900;
+width: 100%
+}
+
+h2{
+font-size:1rem;
+font-weight: 500;
+}
+
+h3 a{
+font-size: 1rem;
+padding-top:1vh;
+font-weight:900;
+}
+
+
+/* Header */
+header {
+
+}
+
+.name {
+    margin: 4vh auto;
+    padding-left: 2vh;
+}
+
+.list1 li{
+margin-bottom: 3vh;
+margin-right: 3vh;
+}
+
+.list1 li a {
+ font-weight:700;
+}
+
+
+.me {       /* Image */
+    margin: 3vh;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    }
+
+.info{
+    font-size:1.5rem;
+    width: 90%;
+    margin:1vh auto 10vh;
+}
+
+
+/*  Hero    */
+#portfolio{             /* portfolio anchor title */
+font-weight:900;
+font-size:3vh;
+margin-top:13vh;
+}
+
+.portfolio-image{
+    width: 90%;
+    /* height: auto; not sure it does something */
+    margin:4vh 0;
+    }
+
+.portfolio{ 
+    padding-bottom:8vh;
+    font-weight: 300;
+    }
+
+.description{
+    font-size: 1.2rem;
+    justify-content: center;
+    width:80%;
+    margin:1vh auto 2vh;
+    }
+
+    /* SKILL*/
+.skill{
+    padding-top:4vh;
+} 
+
+.skill ul{
+padding-right:6vh;
+margin-top:4vh;
+}
+
+.skill ul li{
+    padding-bottom:5vh;
+}
+
+/*  Footer   */
+.footer{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h4{
+padding-top: 15vh;
+padding-bottom:5vh;
+font-weight: 900;
+}
+
+.contact-info{
+    font-size:1.2rem;
+    margin-bottom:5vh;   
+}
+
+.phone{
+    font-size:1.2rem;
+    color:grey;
+    margin:5vh;
+    font-weight: 500;
+}
+
+.email a{
+    color:grey;
+    font-weight:600;
+    transition: 0.3s;
+}
+
+.email{
+    font-size:1.2rem;
+    color:grey;
+    margin:2vh;
+    padding-bottom:8vh;
+    border-bottom:1px lightgrey solid;
+    font-weight: 500;
+}
+
+.footer2{
+    font-size:1rem;
+    padding-top:3vh;
+    padding-bottom:5vh;
+    font-weight: 800;
+}
+.spanname{
+margin-right:20%;
+font-family: 'Nova Mono', monospace,'roboto',sans-serif;
+font-weight:100;
+}
+
+.totop{
+   margin-left:5%;
+}
+
+
+/* effect hover */
+a{
+transition: 0.3s;
+}
+
+a:hover{
+color:grey;
+}
+.email a:hover{
+    color:black;
+}
+
+.totop{
+transition: 0.3s;
+
+}
+
+.totop:hover{
+   color: red;
+}
+
+.list2{                 /*in order to hide the list in smaller screen will display in larger screen */
+    display:none;
+}
+
+/* Media Queries */
+@media screen and (min-width: 769px) {      /* between 769 and 1024     screen */  
+  /* Hero  */ 
+.main-div:nth-child(-n+3){
+    display:flex;  
+  }
+
+    
+}
+
+@media screen and (min-width: 600px) {      /* between 600 and 768      tablets */    
+    /* Header */
+  .header{
+      display:flex;
+      flex-wrap:wrap;
+    }
+
+  .name{
+      order:1;
+      justify-content: center;
+      flex:start;
+    }
+
+  .list1{
+      display:flex;
+        order:2;
+      justify-content: space-evenly;
+      align-items: inline-block;
+      padding-bottom: 2vh;
+    }
+
+    .wrapper{
+        margin-top:2vh;
+        align-content:flex-start;
+        display:flex;
+    }
+
+    .info{
+         order:-1;
+         margin:0;
+         font-size:3vh;
+         text-align:left;
+         padding-right:2vh;
+         padding-left:3vh;
+    }
+
+    .me {          /* Image */
+        padding-right:1vh;
+        width:90%;
+        order:2;
+        margin:0;
+     }
+
+     /* HERO */
+     .description{
+         font-size:1rem;
+     }
+
+    .div1-2, .div3-4, .div5-6{
+    display:flex;
+    }
+
+     /* FOOTER */
+     .footer2{
+         display:flex;
+         padding-top:0;
+         margin-bottom:10vh;        
+     }
+
+    .list2{
+         display:flex;
+     }
+     
+     .list2 a{
+        font-weight:700;
+    }
+
+    .list2 li{
+         margin-top:0;
+         padding-left:1vh;
+         padding-right:1vh;
+         justify-content: space-evenly;
+     }
+
+    .totop{
+    display:none;
+    }
+    
+    .spanname{
+ padding-right:0;
+ margin-right:10%;
+    }
+}   
