@@ -198,13 +198,15 @@ transition: 0.3s;
 
 /* Media Queries */
 @media screen and (min-width: 769px) {      /* between 769 and 1024     screen */  
+    
   /* Hero  */ 
-.main-div:nth-child(-n+3){
-    display:flex;  
+.div1-2-3,.div4-5-6{
+display:flex;  
+}
   }
 
     
-}
+
 
 @media screen and (min-width: 600px) {      /* between 600 and 768      tablets */    
     /* Header */
