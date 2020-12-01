@@ -1,23 +1,24 @@
 *{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    max-width: 1400px;                  /* */
+    max-width: 2000px;                  /* */
     justify-content: center;
     text-align: center;
 }
 
 body {
     margin: 0;
-    background-color: #F9F9F9;
+    background-color: #FAFAFA;
 }
     /* list and hyperlink */
+
 a{
     text-decoration:none;
     color:black;
     font-weight: 500;
     }
     
-    li{
+li{
     list-style:none;
     }   
 
@@ -26,92 +27,92 @@ a{
 h1{
 font-family: 'Nova Mono', monospace;
 font-weight:900;
-width: 100%
+font-size:5vw;
 }
 
-h2{
-font-size:1rem;
-font-weight: 500;
-}
-
-h3 a{
-font-size: 1rem;
-padding-top:1vh;
-font-weight:900;
-}
 
 
 /* Header */
-header {
-
-}
 
 .name {
-    margin: 4vh auto;
-    padding-left: 2vh;
+    margin: 2vh 0vw 1vw 3vh;
 }
 
 .list1 li{
-margin-bottom: 3vh;
-margin-right: 3vh;
+padding-top:1vh;
+margin-bottom:2vh;
+margin-right: 3.5vw;
+border:1px solid white;
+padding-bottom:1vh;
 }
 
 .list1 li a {
  font-weight:700;
+ font-size:3vw;
 }
 
 
 .me {       /* Image */
-    margin: 3vh;
     width:70%;
-    margin-left:auto;
-    margin-right:auto;
+    margin:1vh auto;
     }
 
 .info{
-    font-size:1.5rem;
+    font-size:4vw;
     width: 90%;
-    margin:1vh auto 10vh;
+    margin:1vh auto 4vh;
 }
 
 
 /*  Hero    */
-#portfolio{             /* portfolio anchor title */
-font-weight:900;
-font-size:3vh;
-margin-top:13vh;
+.hero{
+    background-color:white;
 }
 
-.portfolio-image{
-    width: 90%;
-    /* height: auto; not sure it does something */
-    margin:4vh 0;
-    }
+h2{
+    padding-top:4vh;
+    margin-bottom:4vh;
+    font-size:3.5vw;
+    font-weight:900;
+}
 
-.portfolio{ 
-    padding-bottom:8vh;
-    font-weight: 300;
-    }
 
+h3 a{
+    font-size: 3.5vw;
+    padding-top:1vh;
+    font-weight:900;
+    }
+    
+    
 .description{
-    font-size: 1.2rem;
-    justify-content: center;
-    width:80%;
+    font-size: 3vw;
     margin:1vh auto 2vh;
+    padding:0 25vw 2vw;
     }
+
+.portfolio-image,.portfolio-image-search,.portfolio-image-calculator{
+    width: 90%;
+}
+
 
     /* SKILL*/
 .skill{
-    padding-top:4vh;
+    padding-top:2vh;
+    font-size:3vw;
 } 
 
 .skill ul{
-padding-right:6vh;
-margin-top:4vh;
+margin-top:6vh;
+margin-right:7vw;
 }
 
 .skill ul li{
-    padding-bottom:5vh;
+    padding-bottom:4vh;
+    font-size:4vw;
+}
+
+.div1-2, .div3-4, .div5-6{
+    display:none;
 }
 
 /*  Footer   */
@@ -119,57 +120,63 @@ margin-top:4vh;
     width:90%;
     margin-left:auto;
     margin-right:auto;
+    background-color:#FAFAFA;
 }
 
 h4{
-padding-top: 15vh;
-padding-bottom:5vh;
+padding-top: 2vh;
+padding-bottom:1vh;
 font-weight: 900;
+font-size:3vw;
 }
 
 .contact-info{
-    font-size:1.2rem;
-    margin-bottom:5vh;   
+    font-size:3vw;
+    padding:0 20vw;
+    margin-bottom:2vh;  
 }
 
 .phone{
-    font-size:1.2rem;
+    font-size:3vw;
     color:grey;
-    margin:5vh;
     font-weight: 500;
 }
 
 .email a{
     color:grey;
+    font-size:3vw;
     font-weight:600;
     transition: 0.3s;
 }
 
 .email{
-    font-size:1.2rem;
+    font-size:3vw;
     color:grey;
-    margin:2vh;
-    padding-bottom:8vh;
+    margin:1.5vh 0;
+    padding-bottom:3vh;
     border-bottom:1px lightgrey solid;
     font-weight: 500;
 }
 
 .footer2{
-    font-size:1rem;
-    padding-top:3vh;
-    padding-bottom:5vh;
+    padding-bottom:6vh;
     font-weight: 800;
+    background-color:#FAFAFA;
 }
+
 .spanname{
-margin-right:20%;
+margin-right:40%;
+margin-left:2%;
 font-family: 'Nova Mono', monospace,'roboto',sans-serif;
-font-weight:100;
+font-size:3vw;
+font-weight:500;
 }
 
 .totop{
-   margin-left:5%;
+    font-size:3vw;
+   margin-right:5%;
+   font-weight:700;
 }
-
 
 /* effect hover */
 a{
@@ -179,13 +186,13 @@ transition: 0.3s;
 a:hover{
 color:grey;
 }
+
 .email a:hover{
     color:black;
 }
 
 .totop{
 transition: 0.3s;
-
 }
 
 .totop:hover{
@@ -197,18 +204,167 @@ transition: 0.3s;
 }
 
 /* Media Queries */
-@media screen and (min-width: 769px) {      /* between 769 and 1024     screen */  
-    
+@media screen and (min-width: 1024px) {      /* 1024 + */  
+    /* Header */
+    .header, .list1{
+        display:flex;
+        align-content:flex-start;
+        flex-direction:row;
+        justify-content:space-evenly;
+        margin:3vh 0 0 0;
+        padding:0;
+    }
+    .name{
+      margin-right:13vw;
+      margin-top:3vh;
+        font-size:3vw;
+        padding-bottom:4vh;
+    }
+
+    .list1 {
+        margin-left:8vw;
+    padding-left:15vw;
+    }
+
+    .list1 li{
+        border:none;
+    }
+
+    .list1 li a{
+        font-size:1.3vw;
+    }
+
+    .wrapper{
+display:flex;
+}
+
+.info{
+    order:-1;
+    padding-right:2vw;
+    padding-left:3vw;
+    font-size:2.5vw;
+    text-align: left;
+}
+
+.me{
+    margin-top:0;
+    width:35vw;
+    padding-right:4vw;
+    padding-bottom:3vw;
+}
+
   /* Hero  */ 
+h2{
+    font-size:2.5vw;
+    padding:5vh 0;
+}
+
 .div1-2-3,.div4-5-6{
 display:flex;  
 }
+
+.tabletdiv{
+    display:none;
+}
+
+.portfolio-image{
+width:30vw;
+margin-right: 2vw;
+margin-left:2vw;
+}
+
+
+h3 {
+margin-top:2vh;
+}
+
+h3 a {
+font-size:2vw;
+}
+
+.description{
+font-size:1.5vw;
+padding:0 2vw 2vh;
+}
+
+/* Skills section*/
+.skill{
+background-color:white;
+margin-bottom:8vh;
+}
+
+.skill h3{
+    padding-top:4vh;
+    font-size:2.5vw;
+}
+.skill ul{
+    display:flex;
+    padding-left:7.5vw;
+    padding-bottom:8vh;
+}
+.skill ul li{
+    font-size:2.5vw;
+    padding-left:4vw;
+    justify-content: space-evenly;
+}
+
+/* Footer */
+
+h4{
+font-size:2.5vw;
+}
+
+.contact-info{
+font-size:2vw;
+margin:0 0 2vh;
+}
+
+.phone{
+    font-size:2vw;
+}
+
+.email,.email a{
+    padding-bottom:7vh;
+    font-size:2vw;
+}
+
+
+     /* FOOTER2 */
+     .footer2{
+        display:flex;
+        padding-top:0;
+        margin-bottom:4vh;        
+    }
+
+   .list2{
+        display:flex;
+        font-size:1.5vw;
+    }
+    
+    .list2 a{
+       font-weight:700;
+   }
+
+   .list2 li{
+        margin-top:0;
+        padding-left:1.5vh;
+        padding-right:1vh;
+        justify-content: space-evenly;
+    }
+
+   .totop{
+   display:none;
+   }
+   
+   .spanname{
+       padding-top:1vh;
+       font-size:1.5vw;
+    margin-right:40%;
+   }
   }
 
-    
 
-
-@media screen and (min-width: 600px) {      /* between 600 and 768      tablets */    
+@media screen and (min-width: 768px) and (max-width:1023px) {      /* between 600 and 768      tablets */    
     /* Header */
   .header{
       display:flex;
@@ -217,28 +373,30 @@ display:flex;
 
   .name{
       order:1;
-      justify-content: center;
-      flex:start;
+      margin:3vh 10vw 2vh;
     }
 
   .list1{
       display:flex;
         order:2;
       justify-content: space-evenly;
-      align-items: inline-block;
-      padding-bottom: 2vh;
+      padding-bottom: 1vh;
+    }
+
+    .list1 li a {
+        font-size:2.5vw;
     }
 
     .wrapper{
-        margin-top:2vh;
-        align-content:flex-start;
         display:flex;
+        align-content:flex-start;
+        margin-top:2vh;
     }
 
     .info{
+        font-size:2.8vw;
          order:-1;
          margin:0;
-         font-size:3vh;
          text-align:left;
          padding-right:2vh;
          padding-left:3vh;
@@ -246,25 +404,64 @@ display:flex;
 
     .me {          /* Image */
         padding-right:1vh;
-        width:90%;
+        width:35vw;
         order:2;
         margin:0;
+        padding-bottom:5vh;
      }
 
+
      /* HERO */
+     h2{
+        font-size:2.8vw;
+        padding-top:5vh;
+        margin-bottom:4vh;
+
+     }
+     .portfolio-image{
+        margin-right: auto;
+        margin-left:auto;
+        width: 96%;
+        }
+
+     h3 a{
+        font-size:3vw;
+     }
+
      .description{
-         font-size:1rem;
+         margin:1vh 0 5vh;
+         padding:0 3vw;
+         font-size:2.5vw;  
      }
 
     .div1-2, .div3-4, .div5-6{
     display:flex;
     }
 
+    .desktop{
+        display:none;
+    }
+
+    .skill{
+background-color:white;
+padding-bottom: 2vh;
+    }
+
+    .skill ul li{
+    display:inline-block;
+    padding-left:5vw;
+    font-size:3vw;
+    }
+
      /* FOOTER */
+
+    .contact-info{
+        padding:0 7vw;
+    }
+
      .footer2{
          display:flex;
-         padding-top:0;
-         margin-bottom:10vh;        
+         padding-top:0;     
      }
 
     .list2{
@@ -273,12 +470,14 @@ display:flex;
      
      .list2 a{
         font-weight:700;
+        font-size:2vw;
     }
 
     .list2 li{
          margin-top:0;
          padding-left:1vh;
          padding-right:1vh;
+         padding: 0 1vh 2vh;
          justify-content: space-evenly;
      }
 
@@ -287,7 +486,9 @@ display:flex;
     }
     
     .spanname{
+ font-size:3vw;
  padding-right:0;
  margin-right:10%;
+ padding-top:0.3vh;
     }
 }   
